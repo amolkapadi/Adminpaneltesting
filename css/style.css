@@ -1,0 +1,98 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.nav{
+  background-color: blue;
+  color: white;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 70px;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 22px;
+  color: white;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-top: 90px;
+  margin-left: 220px; 
+  font-size: 1.5rem; 
+  width: 85%;
+  padding: 0px 18px;
+}
+
+/* @media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+} */
+
+.img-fluid{
+    width: 100%;
+    height: 400px;
+}
+.active{
+  background-color:red;
+}
+/**services page****/
+.column {
+  row-gap: 10px;
+  float: left;
+  width: 30.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.row{
+  padding-left: 170px;
+  
+}
+/* resolution 125 screen  */
+@media only screen and (min-device-width: 900px) and (max-device-width: 1600px) {
+   .main{
+    background-color: #28ce06 !important;
+    width: 82%;
+   }
+}
+	
+
+/* resolution 150 screen  */
+@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+  .main{
+    background-color: #bb0909 !important;
+    width: 78% !important;
+    color: white !important;
+   }
+}
+
+
+/* resolution 175  */
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+  .main{
+    background-color: #1905d3 !important;
+    width: 75% !important;
+    color: white !important;
+   }
+
+}
+
